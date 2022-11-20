@@ -61,4 +61,35 @@ body {
 }
 
 .glass {
+  cursor: pointer;
+  display: inline;
+}
+
+.glass:hover {
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.priceGlass {
+  display: inline;
+  background-color: rgb(241, 35, 35);
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.priceGlass:hover {
+  background-color: rgba(241, 35, 35, 0.4);
+}
+
+.statusGlass {
+  display: inline;
+  margin-left: 15px;
+  color: green;
+}
+
+.descriptionGlass {
+  padding-top: 15px;
 }
