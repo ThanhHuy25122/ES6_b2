@@ -24,9 +24,18 @@ window.showGlass = (id) => {
     <p class="descriptionGlass">${data.description}</p>
  `;
 
-  let show = `<img src="${data.virtualImg}" />`;
-
-  domId("glassesInfo").innerHTML = content;
+  let show = `<img src="${data.virtualImg}" class="showGlass" id="${data.id}" />`;
 
   domId("avatar").innerHTML = show;
+
+  domId("glassesInfo").innerHTML = content;
+  return;
+};
+
+window.removeGlasses = (test) => {
+  if (!test) {
+    document.querySelector(".showGlass").style.display = "none";
+  } else {
+    document.querySelector(".showGlass").style.display = "block";
+  }
 };
